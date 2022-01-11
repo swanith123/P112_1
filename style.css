@@ -1,0 +1,31 @@
+body
+{
+color: black;
+background: rgb(0,255,201);
+background: linear-gradient(90deg, rgba(0,255,201,1) 0%, rgba(14,168,237,1) 50%, rgba(32,23,221,1) 100%);
+font-family: 'Outfit', sans-serif;
+}
+span
+{
+  font-size: 35px;
+}
+#taken_photo , #result_photo
+{
+  border: 2px dashed rgba(0, 0, 0, 0.555);
+  width: 350px;
+  height: 300px; 
+}
+#result1__gesture_name ,#result2_gesture_name
+{
+  color: black;
+}
+.gesture_name
+{
+  font-size: 40px;
+}
+
+.heading{
+  font-size: 18px;
+  border-radius: 10px;
+  letter-spacing: 10px;
+}

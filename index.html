@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <title>Hand Gestures Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <center>
+<h3 class="btn btn-warning heading">Hand Gestures Project
+<span></span>
+<br>
+</h3>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Take a picture of a hand gesture!!!
+        <br>
+        <b style="color: rgb(255, 251, 0)">Is your hand-gesture a thumbs-up?</b>
+        <br>
+        <b style="color: rgb(0, 255, 21)">Is your hand-gesture a thumbs-down?</b>
+        <br>
+        <b style="color: rgb(255, 166, 0)">Is your hand-gesture a "peace" symbol?</b>
+        <br>
+        <b style="color: rgb(195, 0, 255)">Is your hand-gesture a "okay" symbol?</b>
+        <br>
+        <b style="color: red">Is your hand-gesture a "you" symbol?</b>
+      </p>
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label>Webcam View Of Hand-Gesture</label>
+  <div id="taken_photo"></div>
+  <br><br>
+  <button class="btn btn-warning" onclick="takePhoto()">Take Photograph</button>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label>Prediction #1:</label>
+  <p id="result1_gesture_name" class="gesture_name"></p>
+  <label>Prediction #2:</label>
+  <p id="result2_gesture_name" class="gesture_name"></p>
+</div>
+ <div class="col-md-4 col-sm-12 col-xs-12">
+<label>Snapshot - </label>
+<div id="result_photo"></div>
+<br><br>
+<button class="btn btn-warning" onclick="predictGesture()">Predict Hand-Gesture</button>
+</div>
+
+</center>
+
+</div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
